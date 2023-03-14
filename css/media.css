@@ -1,0 +1,186 @@
+@media (max-width: 1727px) {
+  .about__wrapper {
+    justify-content: center;
+    background: none;
+  }
+  .about-block {
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 1525px) {
+  .container {
+    padding: 0 20px;
+  }
+  .carusel img {
+    max-width: 90%;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+  .nav-footer li {
+    margin: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 1450px) {
+  .carusel h1 {
+    top: 33%;
+  }
+}
+
+@media (max-width: 1220px) {
+  .carusel h1 {
+    top: 30%;
+  }
+}
+
+@media (max-width: 1148px) {
+  .sirvie__block-grid {
+    flex-direction: column;
+  }
+  .sirvie__block-grid div {
+    margin: 0 0 40px 0;
+  }
+  .client__wrapper-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .client__wrapper div {
+    max-width: 660px;
+  }
+
+  .header__logo {
+    font-size: 22px;
+  }
+
+  .header__nav li {
+    font-size: 16px;
+  }
+  .sirvie h2::after {
+    width: 11.5%;
+  }
+  .nav-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 1048px) {
+  /* Сделать меньше шрифт футеру либо убрать мажины у лого футера,
+  На ХЭДЭР нужно сделать бургер меню и добавить паддинги по бокам  */
+
+  /* Бургер почти готов нужно узнать как через JS убрать и добавить класс что бы когда нет добавить класс актив и всё появится а когда есть при повторном клике всё уберается  */
+  .burger-button {
+    width: 26px;
+    height: 19px;
+    display: block;
+    /* background-color: blueviolet; */
+    /* position: absolute; */
+    /* reletive */
+    /* left: 20px; */
+    margin: 0 50px;
+  }
+  .header__nav {
+    position: absolute;
+    top: 97px;
+    display: flex;
+    align-items: start;
+    padding-left: 20px;
+    flex-direction: column;
+    /* top: -300px; */
+    left: -100%;
+    width: 100%;
+    height: 200px;
+    background-color: #ffeddd;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .header__nav li a {
+    color: black;
+  }
+  header {
+    padding: 0 30px;
+    z-index: 99;
+    justify-content: space-between;
+  }
+
+  .header__form {
+    display: none;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+  .nav-footer li {
+    font-size: 16px;
+  }
+
+  .header__nav.show {
+    background-color: #ffeddd;
+    top: 97px;
+    left: 0px;
+    z-index: 1;
+  }
+
+  .header__nav li:hover::after {
+    content: "";
+    width: 0%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carusel h1 {
+    top: 27%;
+  }
+}
+
+@media (max-width: 920px) {
+  .carusel h1 {
+    top: 24%;
+  }
+}
+
+@media (max-width: 768px) {
+  .carusel h1 {
+    top: 15%;
+    font-size: 40px;
+  }
+  .carusel p {
+    font-size: 15px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 648px) {
+  footer {
+    justify-content: center;
+  }
+  footer p {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .carusel h1 {
+    top: 20%;
+    font-size: 35px;
+  }
+  .carusel p {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .carusel h1 {
+    top: 10%;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .carusel h1 {
+    top: 0;
+    font-size: 25px;
+  }
+}
