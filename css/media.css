@@ -67,18 +67,10 @@
 }
 
 @media (max-width: 1048px) {
-  /* Сделать меньше шрифт футеру либо убрать мажины у лого футера,
-  На ХЭДЭР нужно сделать бургер меню и добавить паддинги по бокам  */
-
-  /* Бургер почти готов нужно узнать как через JS убрать и добавить класс что бы когда нет добавить класс актив и всё появится а когда есть при повторном клике всё уберается  */
   .burger-button {
     width: 26px;
     height: 19px;
     display: block;
-    /* background-color: blueviolet; */
-    /* position: absolute; */
-    /* reletive */
-    /* left: 20px; */
     margin: 0 50px;
   }
   .header__nav {
@@ -88,7 +80,6 @@
     align-items: start;
     padding-left: 20px;
     flex-direction: column;
-    /* top: -300px; */
     left: -100%;
     width: 100%;
     height: 200px;
