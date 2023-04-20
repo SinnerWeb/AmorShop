@@ -1,6 +1,13 @@
-const burgerButton = document.querySelector(".burger-button");
-const navbarMenu = document.querySelector(".header__nav");
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
 
-burgerButton.addEventListener("click", () => {
-  navbarMenu.classList.toggle("show");
-});
+const cart = document.querySelector(".cart");
+const menuCart = document.querySelector(".menu__cart");
+
+function menuActive() {
+  menu.classList.toggle("active");
+}
+
+function menuCartactive() {
+  menuCart.classList.toggle("active__cart");
+}

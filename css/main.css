@@ -1,0 +1,169 @@
+.main__photo {
+  width: 100%;
+}
+
+.main__photo img {
+  width: 100%;
+}
+
+.main__contact-wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 40px 0;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+
+.contact-wrapper-appolo {
+  background: url(../img/image/appolo.jpg) no-repeat center;
+  max-width: 400px;
+  height: 240px;
+  margin: 0 10px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  cursor: pointer;
+}
+
+.contact-wrapper-most {
+  background: url(../img/image/Most-Siti-909854f.jpg) no-repeat center;
+  height: 240px;
+  max-width: 400px;
+  margin: 0 10px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  cursor: pointer;
+}
+
+.contact-wrapper img {
+  width: 100%;
+}
+
+.main__carusel-wrapper h2 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+}
+
+.main__carusel-wrapper p {
+  font-size: 15px;
+  color: rgb(97, 96, 96);
+  margin: 0 0 25px 0;
+}
+
+.carusel {
+  display: flex;
+}
+
+.carusel img {
+  width: 95%;
+}
+
+.about__shop-wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+
+  margin: 40px auto;
+}
+
+.about__shop-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.about__shop-text {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__shop-text h2 {
+  font-size: 20px;
+  width: 350px;
+  margin: 0 0 10px 0;
+}
+.about__shop-text p {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+  text-align: start;
+  line-height: 22px;
+}
+
+main h2 {
+  font-size: 20px;
+}
+
+.shop-wrapper {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 10px;
+}
+
+.shop-wrapper :first-child {
+  margin: 0 0 20px 0;
+}
+
+.shop-wrapper :nth-child(2) {
+  margin: 0 0 40px 0;
+}
+
+.shop-wrapper p {
+  text-align: start;
+}
+.shop-wrapper .center__p,
+.shop-wrapper .center__p-bold {
+  text-align: center;
+}
+
+.center__p-bold {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+}
+
+.bold__p {
+  font-size: 30px;
+  margin: 0 0 15px 0;
+}
+.small__p {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+  margin: 0 0 15px 0;
+}
+
+.center__p {
+  font-size: 15px;
+  color: rgb(66, 66, 66);
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.shop {
+  display: flex;
+  margin: 20px auto;
+  max-width: 900px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop div {
+  max-width: 440px;
+}
+
+.shop img {
+  width: 100%;
+}

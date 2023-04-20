@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/icon/iconforsite.PNG" />
+    <link rel="stylesheet" href="./css/csszero.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/cloth.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Amor Shop</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="burger" onclick="menuActive()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo"><a href="./index.html"><h1>Amor Shop</h1></a></div>
+        <div class="cart" onclick="menuCartactive()"><img src="./img/icon/cart4.png" alt="" /></div>
+        <div class="menu__cart"">
+          <h2>Ваш заказ</h2>
+          <div class="buy"></div>
+          <div class="call">
+            <input type="tel" placeholder="Номер телефона" />
+            <button class="btn__buy" onclick="clearBtn()">Оформить</button>
+          </div>
+          <p>После оформления заказа наш менеджер свяжется с вами</p>
+        </div>
+        <div class="menu">
+          <ul class="nav__bar">
+            <li><a href="./suits.html">Мужские костюмы</a></li>
+            <li><a href="./jackets.html">Пиджаки мужские</a> </li>
+            <li><a href="./blazer.html">Зимние куртки</a> </li>
+            <li><a href="./shirts.html">Мужские рубашки</a> </li>
+          </ul>
+          <span></span>
+          <div class="menu__nav-info">
+            <p><a href="./infodelivery.html">ДОСТАВКА И ОПЛАТА</a></p>
+            <p><a href="./exchange.html">ВОЗВРАТ И ОБМЕН</a></p>
+            <p><a href="./contact.html">КОНТАКТЫ</a></p>
+          </div>
+        </div>
+      </header>
+      <div class="cloth__wrapper">
+        <p class="small__p">
+         Каталог мужских пиджаков для делового стиля и на каждый день. Стильные пиджаки мужские под джинсы, пиджаки с локтями, жилеты мужские, куртка пиджак| Amor Shop
+        </p>
+        <div class="cloth__grid">
+          <div class="cloth__block">
+            <img src="./img/image/2_1.jpg" alt="" />
+            <p class="name">Пиджак Amor Shop</p>
+            <p class="price"><strong>4.500грн</strong></p>
+            <button>В КОРЗИНУ</button>
+          </div>
+          <div class="cloth__block">
+            <img src="./img/image/2_2.jpg" alt="" />
+            <p class="name">Пиджак клетчатый</p>
+            <p class="price"><strong>6.500грн</strong></p>
+            <button>В КОРЗИНУ</button>
+          </div>
+          <div class="cloth__block">
+            <img src="./img/image/2_3.jpg" alt="" />
+            <p class="name">Пиджак мужской</p>
+            <p class="price"><strong>4.500грн</strong></p>
+            <button>В КОРЗИНУ</button>
+          </div>
+          <div class="cloth__block">
+            <img src="./img/image/2_4.jpg" alt="" />
+            <p class="name">Пиджак чёрный</p>
+            <p class="price"><strong>4.500грн</strong></p>
+            <button>В КОРЗИНУ</button>
+          </div>
+          <div class="cloth__block">
+            <img src="./img/image/2_5.jpg" alt="" />
+            <p class="name">Пиджак мужской в полоску</p>
+            <p class="price"><strong>4.500грн</strong></p>
+            <button>В КОРЗИНУ</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="logo__footer">Amor Shop</div>
+        <p>Copyright 2015-2023 © Amor Shop</p>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/burger.js"></script>
+  <script src="./js/cart.js"></script>
+</html>

@@ -1,153 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/media.css" />
-    <title>AgriCulture</title>
+    <link rel="icon" href="./img/icon/iconforsite.PNG" />
+    <link rel="stylesheet" href="./css/csszero.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>Amor Shop</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="header__logo">AgriCulture</div>
-        <button class="burger-button">
-          <span class="burger-icon"></span>
-        </button>
-        <ul class="header__nav">
-          <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">services</a></li>
-          <li><a href="">contact</a></li>
-        </ul>
-
-        <form action="" class="header__form">
-          <input type="submit" value="" name="btn__search" />
-          <input type="search" name="search" id="" placeholder="Search" />
-        </form>
+        <div class="burger" onclick="menuActive()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo"><h1>Amor Shop</h1></div>
+        <div class="cart" onclick="menuCartactive()">
+          <img src="./img/icon/cart4.png" alt="" />
+        </div>
+        <div class="menu__cart"">
+        <h2>Ваш заказ</h2>
+          <div class="buy"></div>
+          <div class="call">
+            <input type="tel" placeholder="Номер телефона" />
+            <button class="btn__buy" onclick="clearBtn()">Оформить</button>
+          </div>
+          <p>После оформления заказа наш менеджер свяжется с вами</p>
+        </div>
+        <div class="menu">
+          <ul class="nav__bar">
+            <li><a href="./suits.html">Мужские костюмы</a></li>
+            <li><a href="./jackets.html">Пиджаки мужские</a></li>
+            <li><a href="./blazer.html">Зимние куртки</a></li>
+            <li><a href="./shirts.html">Мужские рубашки</a></li>
+          </ul>
+          <span></span>
+          <div class="menu__nav-info">
+            <p><a href="./infodelivery.html">ДОСТАВКА И ОПЛАТА</a></p>
+            <p><a href="./exchange.html">ВОЗВРАТ И ОБМЕН</a></p>
+            <p><a href="./contact.html">КОНТАКТЫ</a></p>
+          </div>
+        </div>
       </header>
       <main>
-        <div class="carusel">
-          <div><img src="/img/image/image 10 (3).png" alt="" /></div>
-          <h1>Caring of Nature</h1>
-          <p>
-            We did most of the heavy lifting for you to provide a default
-            stylings that incorporate our custom components .
-          </p>
+        <div class="main__photo">
+          <img src="./img/image/test2.jpg" alt="" />
         </div>
-        <div class="sirvie">
-          <h2>Our Services</h2>
-          <div class="sirvie__block-grid">
-            <div class="block-grid">
-              <img src="/img/icon/🦆 icon _users_.png" alt="" />
-              <p>Development</p>
-              <p>
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers.
-              </p>
-            </div>
-            <div class="block-grid">
-              <img src="/img/icon/🦆 icon _archive_.png" alt="" />
-              <p>User Experience</p>
-              <p>
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers.
-              </p>
-            </div>
-            <div class="block-grid">
-              <img src="/img/icon/🦆 icon _settings_.png" alt="" />
-              <p>Work</p>
-              <p>
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers.
-              </p>
-            </div>
+        <div class="main__contact-wrapper">
+          <div class="contact-wrapper-appolo">
+            <p>ТРЦ «Appolo» г. Днепр вулиця Титова, 36</p>
+          </div>
+          <div class="contact-wrapper-most">
+            <p>ТРЦ «МОСТ-Cити» г. Днепр вулиця Глінки, 2</p>
           </div>
         </div>
-        <div class="about__wrapper">
-          <div class="about-block">
-            <h2>About Us</h2>
+        <div class="main__carusel-wrapper">
+          <h2>Новая Коллекция</h2>
+          <p>поможет изменить твой стиль...</p>
+          <div class="carusel">
+            <div><img src="./img/image/man1.jpg" alt="" /></div>
+            <div><img src="./img/image/man2.jpg" alt="" /></div>
+            <div><img src="./img/image/man3.jpg" alt="" /></div>
+            <div><img src="./img/image/man4.jpg" alt="" /></div>
+          </div>
+        </div>
+        <div class="about__shop-wrapper">
+          <div class="about__shop-video">
+            <iframe
+              width="450"
+              height="250"
+              src="https://www.youtube.com/embed/aPlhpWMZMiw"
+              title="Giotelli - коллекция весна-лето 2020"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="about__shop-text">
+            <p class="about__shop-title">Магазины одежды Amor Shop</p>
             <p>
-              We did most of the heavy lifting for you to provide a default
-              stylings that incorporate our custom components. Additionally, we
-              refined animations and transitions .
+              Бренд Amor Shop направлен на обеспечение безусловного
+              удовлетворения клиента с его коллекциями привлекательными для всех
+              людей, которые считают моду как образ жизни, следует новыми
+              тенденциями и имеют элегантный стиль. Бренд Amor Shop отражает
+              инновационный стиль в каждой новой коллекции благодаря 15 летнему
+              опыту работы, качеством, и современной позицией, молодых и
+              динамичных дизайнеров Италии.
             </p>
-            <p>
-              We did most of the heavy lifting for you to provide a default
-              stylings that incorporate our custom components. Additionally, we
-              refined animations and transitions to provide a smoother
-              experience for developers. We did most of the heavy lifting for
-              you to provide a default stylings that incorporate our custom
-              components. Additionally, we refined animations and transitions to
-              provide a smoother experience for developers.
-            </p>
-            <button class="about-btn">Learn More</button>
-          </div>
-          <img src="/img/image/image 10 (1).png" alt="" />
-        </div>
-        <div class="client__wrapper">
-          <h2>Client Testimoniols</h2>
-          <div class="client__wrapper-block">
-            <div class="clietn-title">
-              <p>
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers. We did most of the heavy lifting for
-                you to provide a default stylings that incorporate our custom
-                components. Additionally, we refined animations and transitions
-                to provide a smoother experience for developers.
-              </p>
-              <div class="client">
-                <p>Viviane Pereira</p>
-                Web Developer
-              </div>
-            </div>
-            <div class="clietn-title">
-              <p>
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers. We did most of the heavy lifting for
-                you to provide a default stylings that incorporate our custom
-                components. Additionally, we refined animations and transitions
-                to provide a smoother experience for developers.
-              </p>
-              <div class="client">
-                <p>Lucas Silva</p>
-                Marketing Digital
-              </div>
-            </div>
           </div>
         </div>
-        <div class="contact__wrapper">
-          <h2>Contact Us</h2>
-          <p>
-            We did most of the heavy lifting for you to provide a default
-            stylings that incorporate our custom components. Additionally, we
-            refined animations and transitions .
+        <div class="shop-wrapper">
+          <h2>МАГАЗИН МУЖСКИХ КОСТЮМОВ В ДНЕПРЕ «Amor Shop»:</h2>
+          <h2>Купить мужской костюм Amor Shop и получить к своему образу:</h2>
+          <p class="bold__p">Твердый характер и особое настроение</p>
+          <p class="small__p">
+            Невероятно гармоничное сочетание строгой, сдержанной классики и
+            новаторских модных тенденций привлекают в моделях мужских костюмов
+            бренда. Такие вещи помогают демонстрировать уверенность и силу,
+            позволяя подчеркнуть индивидуальный характер и свободу
+            мировоззрений.
           </p>
-          <button class="contact-btn">Learn More</button>
+          <div class="shop">
+            <div><img src="./img/image/shop_man1.jpg" alt="" /></div>
+            <div><img src="./img/image/shop_man2.jpg" alt="" /></div>
+          </div>
+          <p class="bold__p">Смелые и эффектные фасоны</p>
+          <p class="small__p">
+            «Giotelli» предлагает стильные мужские костюмы на свадьбу, костюмы
+            для торжественных мероприятий, костюмы на выпускной и деловые
+            костюмы в офис.
+          </p>
+          <p class="small__p">
+            Идеальный крой, высокая точность пошива и применение лучших тканей
+            делает их комфортной, изысканной и практичной одеждой.
+          </p>
+          <p class="bold__p">Качество</p>
+          <p class="small__p">
+            Строгие линии, броские клетки и оригинальные цветовые сочетания
+            тканей помогают формировать нетривиальные образы.
+          </p>
+          <p class="small__p">
+            Дорогой, благородный текстиль с глянцевым блеском или матовой
+            фактурой привлекают внимание, заставляя оценить безупречный стиль
+            обладателя костюма.
+          </p>
+          <div class="shop">
+            <div><img src="./img/image/shop_man3.jpg" alt="" /></div>
+            <div><img src="./img/image/shop_man4.jpg" alt="" /></div>
+          </div>
+          <p class="center__p">
+            Важные моменты в жизни должны быть безупречны, и мы рады быть
+            частичкой Вашего счастья…
+          </p>
+          <p class="center__p">
+            Amor Shop приглашает на новую коллекцию мужских костюмов для свадьбы
+            и на выпускной бал!
+          </p>
+          <p class="center__p-bold">
+            Мужской смокинг– это гарантия безупречного образа для торжественного
+            мероприятия! Выглядеть уверенно и безупречно – надеть смокинг от
+            бренда Amor Shop
+          </p>
+          <p class="center__p-bold">
+            мужественность – элегантность – безупречный стиль
+          </p>
+          <p class="bold__p">Гармония комфорта и изящества</p>
+          <p class="small__p">
+            «Amor Shop» создает вещи, которые не хочется снимать. Продуманные
+            линии контуров, удобный крой и приятная текстура материала помогут
+            наслаждаться комфортом такой одежды, чувствуя себя уверенно и
+            свободно.
+          </p>
+          <div class="shop">
+            <div><img src="./img/image/shop_man5.jpg" alt="" /></div>
+            <div><img src="./img/image/shop_man6.jpg" alt="" /></div>
+          </div>
+          <p class="bold__p">Широкий выбор моделей</p>
+          <p class="small__p">
+            Модели от «Amor Shop» вынуждают оглянуться, подчеркивая оригинальный
+            имидж своего владельца. Мужской деловой костюм, изумительные
+            смокинги, торжественные и молодежные фасоны позволяют найти нужный
+            вариант одежды для любой фигуры.
+          </p>
+          <p class="center__p">
+            <strong>Мужские пиджаки</strong> – Дизайнеры Amor Shop особое
+            внимание уделяют современным тенденциям моды и адаптируют новые
+            модели мужских пиджаков под стиль и пожелания своих клиентов.
+          </p>
+          <p class="bold__p">Нетривиальные дизайнерские решения</p>
+          <p class="small__p">
+            Здесь будет выгодно костюм мужской классический купить. Жилеты могут
+            создаваться из ткани в тон пиджака, либо выступать в качестве
+            стильного акцента, выполненного из контрастного материала. «Amor
+            Shop» предлагает и трендовые модные варианты «двоек» для стройных и
+            атлетичных мужчин.
+          </p>
+          <div class="shop">
+            <div><img src="./img/image/shop_man7.jpg" alt="" /></div>
+            <div><img src="./img/image/shop_man8.jpg" alt="" /></div>
+          </div>
+          <p class="bold__p">Сочетание делового стиля и роскоши</p>
+          <p class="small__p">
+            Статусные и элегантные модные мужские костюмы и мужские пальто
+            помогут добиваться поставленных целей, демонстрируя окружающим
+            превосходство и независимость.
+          </p>
+          <p class="bold__p">Эффектная фурнитура и аксессуары</p>
+          <p class="small__p">
+            «Amor Shop» создает одежду для уверенных в себе мужчин. Дизайнерские
+            пуговицы, оригинальные ремни, неординарные мужские галстуки и
+            бабочки подчеркивают особый статус костюмов.
+          </p>
+          <p class="bold__p">Точное исполнение деталей</p>
+          <p class="small__p">
+            Магазин мужских костюмов Днепр «Amor Shop» предлагает
+            высококачественные изделия. В костюмах пристальное внимание
+            уделяется абсолютно всем элементам: от внешней отделки до подкладки
+            и пуговиц.
+          </p>
+          <p class="center__p-bold">Утепляйтесь с Amor Shop!</p>
+          <p class="small__p">
+            Разнообразие фасонов утепленных курток и пуховиков из новой
+            коллекции зимней верхней одежды позволит вам легко найти «свою»
+            модель.
+          </p>
+          <p class="small__p">
+            Оцените современный дизайн курток «аляска» из нашей коллекции!
+            Благодаря водоотталкивающему покрытию эти модели защитят от мороза,
+            дождя и снега, а система утепления поможет сохранить тепло даже при
+            сильном ветре.
+          </p>
+          <p class="center__p">
+            Новинка сезона – линейка пуховых курток Amor Shop, в которых
+            сочетаются пух премиум-класса и специально разработанный
+            наполнитель. Синтетический наполнитель использован в тех зонах,
+            которые подвержены наибольшему воздействию влаги при активном образе
+            жизни. Пух сохраняет тепло, тем самым обеспечивая легкость и свободу
+            движения. А модели ультратёплых мужских курток защитят от холода
+            даже в самые сильные морозы!
+          </p>
+          <p class="center__p">
+            А модели ультратёплых мужских курток защитят от холода даже в самые
+            сильные морозы!
+          </p>
+          <p class="center__p">
+            Самые стильные, комфортные и теплые образы ждут Вас в магазине по
+            очень приятным ценам…
+          </p>
+          <p class="center__p-bold">Элегантная одежда для истинных мужчин!</p>
         </div>
       </main>
       <footer>
-        <ul class="nav-footer">
-          <li><a href="">home</a></li>
-          <li><a href="">about</a></li>
-          <li><a href="">services</a></li>
-          <li><a href="">contact</a></li>
-        </ul>
-        <div class="footer__logo">AgriCulture</div>
-        <p>agriculture@example.com | (99) 9 9999.9999</p>
+        <div class="logo__footer">Amor Shop</div>
+        <p>Copyright 2015-2023 © Amor Shop</p>
       </footer>
     </div>
   </body>
-  <script src="/js/burger.js"></script>
+  <script src="./js/burger.js"></script>
 </html>
